@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use app\Http\Controllers\IndexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('cv');
-});
+Route::get('/', 'IndexController@home')->name('home');

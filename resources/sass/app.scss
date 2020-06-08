@@ -6,3 +6,40 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+ul {
+    @include list-unstyled();
+}
+
+
+ul.running li {
+    margin-left: .5em;
+    &:nth-child(n+2):before {
+        content: '•';
+        margin-right: .2em;
+    }
+}
+ul.duties * {
+    display: inline;
+}
+
+ul.duties {
+    margin-left: 1em;
+}
+
+ul.duties > li {
+    margin-left: -1em;
+}
+
+ul.duties > li >span {
+    font-weight: bold;
+}
+
+.projects .toggle{
+    &[aria-expanded=true] i:before {
+        content: "\f106";
+    }
+    &[aria-expanded=false] i:before {
+        content: "\f107";
+    }
+}
