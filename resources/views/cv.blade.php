@@ -12,12 +12,30 @@
 
     </head>
     <body>
+    <div class="row placard">
+        <div class="col-md-4">
+            <h1>CHARLIE MEERS</h1>
+            <h2 class="subtitle">WEB DEVELOPER</h2>
+        </div>
+    </div>
+    </div>
         <div id ="app" class="container">
-        <div class="row">
+        <div class="row cv"
+            v-on:click="applyDimension(2)"
+            :class="{ threeD: isThreeD, twoD: isTwoD }"
+        >
+            <button type="button" class="close" aria-label="Close"
+                v-on:submit.prevent
+                v-on:click="applyDimension(3)"
+                v-on:click.stop
+
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
             <div class="col-md-4">
                 <h1>CHARLIE MEERS</h1>
-                <h2>WEB DEVELOPER</h2>
-                <ul>
+                <h2 class="subtitle">WEB DEVELOPER</h2>
+                <ul class="icons">
                     <li><i class="fa fa-mobile"></i> 816-813-0859</li>
                     <li><i class="fa fa-paper-plane"></i> charliemeers@gmail.com</li>
                     <li><i class="fa fa-link"></i> charliemeers.com</li>
@@ -28,7 +46,7 @@
                     intuitive user interfaces & automating business goals online
                 </blockquote>
                 <h3>ATTRIBUTES</h3>
-                <ul>
+                <ul class="atts">
                     <li>5 years fullstack web development experience</li>
                     <li>Proven skills in PHP, HTML, CSS, JavaScript, GraphQL, Vue.js, Laravel, Node.js, Git, &
                         SQL
@@ -49,7 +67,7 @@
                     Graduated May 2011
                 </p>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 jobs">
                 EXPERIENCE
                 @foreach($jobs as $job)
                     <job v-bind:details='@json($job)'></job>

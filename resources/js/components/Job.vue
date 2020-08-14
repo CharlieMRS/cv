@@ -9,8 +9,7 @@
             </a>
             <div class="collapse" :id="projectsBlock">
                 <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <projects />
                 </div>
             </div>
         </div>
@@ -26,6 +25,7 @@
 </template>
 
 <script>
+    import Project from "./Project.vue";
     export default {
         mounted() {
             console.log('Component mounted.')
@@ -37,6 +37,9 @@
             projectsBlock: function () {
                 return 'projects' + this.details.id;
             }
+        },
+        components: {
+            Project
         }
     }
 </script>
