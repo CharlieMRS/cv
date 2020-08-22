@@ -90,6 +90,7 @@
                     <li>Coded cross platform email templates &amp; managed 10+ campaigns &amp; email lists</li>
                     <li>Ran SEO Audits &amp; implement SEO plans</li>
                 </ul>
+                <project v-bind:projects=this.jobs.TS.projects v-bind:id=this.jobs.TS.id></project>
                 <h3>Web Developer @ Turn the Page Online Marketing</h3>
                 <p>Lee’s Summit, MO     04/2015 – 07/2016</p>
                 <ul class="atts">

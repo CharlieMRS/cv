@@ -170,8 +170,8 @@ ul.icons i {
 }
 
 ul.icons .fa-mobile {
-    font-size: 1.9em;
-    margin: 0 0.3em 0 0;
+    font-size: 1.5em;
+    margin: 0 0.6em 0 0;
 }
 
 .icons i.fa.fa-paper-plane {
@@ -193,10 +193,6 @@ ul.icons .fa-mobile {
     color: #000;
     text-align: left;
     font-size: 0.8rem;
-    & > div {
-        display: flex;
-        align-items: center;
-    }
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -246,6 +242,7 @@ span.carousel-control-next-icon {
             background: #000000a1;
             border-radius: 2px;
             white-space: nowrap;
+            margin-right: .3em;
         }
     }
 }
