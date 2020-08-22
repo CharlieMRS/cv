@@ -19,6 +19,30 @@ h1 {
     line-height: 0.9;
     font-size: 3em;
     margin-bottom: 0.1em;
+    span {
+        font-size: .5em;
+        letter-spacing: 0;
+        line-height: 1.2em;
+        display: block;
+        margin-top: 0.3em;
+    }
+}
+h3 {
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 0 0 .2em;
+}
+
+a {
+    color: inherit;
 }
 
 blockquote {
@@ -29,7 +53,23 @@ ul {
     @include list-unstyled();
     &.atts {
         list-style: disc;
-        margin: 0 0 3em 1em;
+        margin: 0 0 1em 1em;
+        line-height: 1.5em;
+        li {
+            margin-bottom: 0.4em;
+        }
+    }
+    &.callout {
+        list-style: none;
+        margin: 0 0 2.5em 1em;
+        li {
+            text-indent: -1.5em;
+            &:before {
+                content: "\f00c";
+                font-family: 'FontAwesome';
+                margin-right: .5em;
+            }
+        }
     }
     &.running li {
         margin-left: .5em;
@@ -54,6 +94,8 @@ ul.duties > li {
 ul.duties > li >span {
     font-weight: bold;
 }
+
+
 
 .projects .toggle{
     &[aria-expanded=true] i:before {
@@ -102,9 +144,11 @@ ul.duties > li >span {
 .jobs h3 {
     font-size: 1.5em;
     font-weight: 100;
+    margin: 0;
 }
 
 h4 {
+    text-transform: uppercase;
     font-size: 1em;
 }
 
@@ -122,6 +166,7 @@ ul.icons i {
     width: 0.8em;
     color: #66666678;
     line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 ul.icons .fa-mobile {
@@ -141,5 +186,67 @@ ul.icons .fa-mobile {
 
 .icons i.fa.fa-map-marker {
     margin-right: 0.8em;
+}
+
+.carousel-caption {
+    position: initial;
+    color: #000;
+    text-align: left;
+    font-size: 0.8rem;
+    & > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.card.card-body {
+    padding: 0;
+}
+
+
+.carousel-indicators li {
+    background: hsl(0deg 0% 80%);
+}
+
+.projects {
+    margin: 0 0 3em;
+}
+
+.carousel {
+    padding: 0 0 4em;
+}
+
+.carousel-inner {
+    height: 14em;
+    overflow: scroll;
+}
+.carousel-indicators li {
+    border-top-width: 0px;
+}
+.techStack {
+    margin-bottom: 0.7em;
+    font-size: 0.8em;
+    ul {
+        display: inline;
+        margin-bottom: 0.8em;
+        li {
+            display: inline;
+            color: #fff;
+            padding: 0.3em;
+            line-height: 2.2;
+            background: #000000a1;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+    }
 }
 
