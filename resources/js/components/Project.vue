@@ -3,31 +3,33 @@
         <h4><a class="toggle" data-toggle="collapse" :href="`#projectsBlock${this.id}`"
                role="button" aria-expanded="false" :aria-controls="projectsBlock">
             Projects
-            <i class="fa" :class="{ active: isActive, 'text-danger': hasError }"></i>
+            <i class="fa"></i>
         </a></h4>
-        <div class="collapse show" :id="projectsBlock">
-            <div class="card card-body">
+        <div class="collapse" :class=" {show: this.id===1}" :id="`projectsBlock${this.id}`">
+            <div class="card card-body" >
                 <div class="bd-example">
                     <div data-interval="false" :id="`carousel${this.id}`" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li
+                                data-target="#carouselExampleCaptions"
+                                class="active"
+                                v-for="(project, index) in this.projects"
+                                :data-slide-to=index
+                            >
+                            </li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="" class="d-block w-100" alt="">
-                                <div class="carousel-caption d-none d-md-block mx-auto w-75">
+                            <div class="carousel-item"
+                                 v-for="(project, index) in this.projects"
+                                 :class="{ active: index===0 }"
+                            >
+                                <div class="carousel-caption d-md-block mx-auto w-75">
                                     <div>
-                                        <h5>CL Ambassador Registration + Call Scheduler</h5>
+                                        <h5>{{project.title}}</h5>
                                         <div class="techStack">
-                                            <h6>Tech Used</h6>
+                                            <h6 class="d-none">Tech Used</h6>
                                             <ul>
-                                                <li>ElasticSearch</li>
-                                                <li>GraphQL</li>
-                                                <li>Google API</li>
-                                                <li>PHP</li>
-                                                <li>Foundation</li>
+                                                <li v-for="item in project.tech">{{item}}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -56,11 +58,12 @@
 <script>
     export default {
         props: [
-            'job'
+            'id',
+            'projects'
         ],
         computed: {
             projectsBlock: function () {
-                return 'projects' + this.job.id;
+                return '';
             }
         }
     }
