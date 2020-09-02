@@ -39,6 +39,7 @@
                     top: 170px;
                     left: 50px;
                     width: 800px;
+                    max-height: 710px;
                 }
                 .cv.threeD:not(.twoD):hover{
                     cursor: pointer;
