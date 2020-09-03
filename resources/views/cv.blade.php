@@ -59,6 +59,7 @@
                         class="btn btn-light"
                         v-on:click="applyDimension(2)"
                     >Resume</button>
+                    <a href="{{url('/docs/CV_CharlieMeers082020.pdf')}}" rel="Charlie Meers Web Developer Resume PDF">PDF Version</a>
                 </div>
             </div>
             <div class="row cv threeD"
@@ -158,7 +159,9 @@
                 </div>
             </div>
         </div>
-
+        <footer>
+            <a class="repo" target="_blank" href="https://github.com/CharlieMRS/cv" rel="Charlie Meers Web Developer Online Resume GitHub Repo"><i class="fa fa-github"></i></a>
+            <script src='js/app.js'></script>
+        </footer>
     </body>
-    <footer><script src='js/app.js'></script></footer>
 </html>

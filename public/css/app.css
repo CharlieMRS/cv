@@ -10928,6 +10928,18 @@ a {
   color: inherit;
 }
 
+a.repo {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 3em;
+  z-index: -1;
+}
+
+button + a {
+  margin-left: 1em;
+}
+
 blockquote {
   font-style: italic;
 }
