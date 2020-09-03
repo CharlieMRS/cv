@@ -110,7 +110,7 @@
                 <div class="col-md-8 jobs">
                     <h2>EXPERIENCE</h2>
                     <h3>WEB DEVELOPER @ LIFESTYLE PUBLICATIONS</h3>
-                    <p>Kansas City, MO     04/2019 – Current</p>
+                    <p class="jobMeta">Kansas City, MO     04/2019 – Current</p>
                     <ul class="atts">
                         <li>Implement fullstack features for internal MVC SPA Symfony/Doctrine/Handlebars web app</li>
                         <li>Build queries for MySQL, GraphQL, and dynamoDB</li>
@@ -122,7 +122,7 @@
                     </ul>
                     <project v-bind:projects=this.jobs.LP.projects v-bind:id=this.jobs.LP.id></project>
                     <h3>DIRECTOR OF WEB DEVELOPMENT @ TALLGRASS STUDIOS</h3>
-                    <p>Lawrence, KS     10/2017 – 04/2019</p>
+                    <p class="jobMeta">Lawrence, KS     10/2017 – 04/2019</p>
                     <ul class="atts">
                         <li>Designed &amp; maintained 30+ client &amp; internal websites</li>
                         <li>Designed layouts/database/site navigation</li>
@@ -134,7 +134,7 @@
                     </ul>
                     <project v-bind:projects=this.jobs.TS.projects v-bind:id=this.jobs.TS.id></project>
                     <h3>Web Developer @ Turn the Page Online Marketing</h3>
-                    <p>Lee’s Summit, MO     04/2015 – 07/2016</p>
+                    <p class="jobMeta">Lee’s Summit, MO     04/2015 – 07/2016</p>
                     <ul class="atts">
                         <li>Designed Wordpress websites &amp; created mockups &amp; wireframes</li>
                         <li>Pitched successful website designs &amp; site achitecture to clients in response to RFPs</li>
@@ -145,7 +145,7 @@
                         <li>Integrated 3rd party APIs</li>
                     </ul>
                     <h3>WEB/GRAPHIC Designer @ Whitney Design</h3>
-                    <p>Olympia, WA     05/2014 – 03/2015</p>
+                    <p class="jobMeta">Olympia, WA     05/2014 – 03/2015</p>
                     <ul class="atts">
                         <li>Designed Wordpress websites</li>
                         <li>Coded Wordpress child themes &amp; plugins</li>

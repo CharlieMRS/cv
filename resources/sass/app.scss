@@ -8,7 +8,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     background-image: url(/images/desk.jpg);
     background-repeat: no-repeat;
 }
@@ -27,6 +27,10 @@ h1 {
         margin-top: 0.3em;
     }
 }
+h2 {
+    font-size: 1.8em;
+}
+
 h3 {
     text-transform: uppercase;
 }
@@ -96,7 +100,13 @@ ul.duties > li >span {
     font-weight: bold;
 }
 
+p, ul {
+    font-size: 1.2em;
+}
 
+p.jobMeta {
+    margin: 0 0 0.7em;
+}
 
 .projects .toggle{
     &[aria-expanded=true] i:before {
@@ -107,6 +117,9 @@ ul.duties > li >span {
     }
 }
 .placard{
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 1.4em;
 }
 
@@ -160,7 +173,10 @@ h4 {
     margin-bottom: 0.4em;
 }
 
-ul.icons {white-space: nowrap;font-size: 0.9em;}
+ul.icons {
+    white-space: nowrap;
+    font-size: 1em;
+}
 
 ul.icons i {
     font-size: 1.3em;
@@ -194,7 +210,7 @@ ul.icons .fa-mobile {
     position: initial;
     color: #000;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -256,5 +272,4 @@ span.carousel-control-next-icon {
         display: none;
     }
 }
-
 

@@ -10883,7 +10883,7 @@ a.text-dark:focus {
 }
 
 body {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   background-image: url(/images/desk.jpg);
   background-repeat: no-repeat;
 }
@@ -10903,6 +10903,10 @@ h1 span {
   line-height: 1.2em;
   display: block;
   margin-top: 0.3em;
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 h3 {
@@ -10983,6 +10987,15 @@ ul.duties > li > span {
   font-weight: bold;
 }
 
+p,
+ul {
+  font-size: 1.2em;
+}
+
+p.jobMeta {
+  margin: 0 0 0.7em;
+}
+
 .projects .toggle[aria-expanded=true] i:before {
   content: "\F106";
 }
@@ -10992,6 +11005,9 @@ ul.duties > li > span {
 }
 
 .placard {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 1.4em;
 }
 
@@ -11047,7 +11063,7 @@ h4 {
 
 ul.icons {
   white-space: nowrap;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 ul.icons i {
@@ -11082,7 +11098,7 @@ ul.icons .fa-mobile {
   position: initial;
   color: #000;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .carousel-control-prev,
