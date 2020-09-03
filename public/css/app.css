@@ -11009,6 +11009,7 @@ p.jobMeta {
   top: 0;
   left: 0;
   padding: 1.4em;
+  width: 800px;
 }
 
 /*.cv {
@@ -11131,11 +11132,12 @@ span.carousel-control-next-icon {
 
 .carousel-inner {
   height: 14em;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .carousel-indicators li {
   border-top-width: 0px;
+  height: 0;
 }
 
 .techStack {

@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" :href="`#carousel${this.id}`" role="button"
+                        <!--<a class="carousel-control-prev" :href="`#carousel${this.id}`" role="button"
                            data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -47,7 +47,7 @@
                            data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </div>

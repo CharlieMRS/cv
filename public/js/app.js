@@ -37851,46 +37851,6 @@ var render = function() {
                     )
                   }),
                   0
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "carousel-control-prev",
-                    attrs: {
-                      href: "#carousel" + this.id,
-                      role: "button",
-                      "data-slide": "prev"
-                    }
-                  },
-                  [
-                    _c("span", {
-                      staticClass: "carousel-control-prev-icon",
-                      attrs: { "aria-hidden": "true" }
-                    }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "carousel-control-next",
-                    attrs: {
-                      href: "#carousel" + this.id,
-                      role: "button",
-                      "data-slide": "next"
-                    }
-                  },
-                  [
-                    _c("span", {
-                      staticClass: "carousel-control-next-icon",
-                      attrs: { "aria-hidden": "true" }
-                    }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-                  ]
                 )
               ]
             )
