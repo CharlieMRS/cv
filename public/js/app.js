@@ -2018,7 +2018,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['id', 'projects'],
   computed: {
@@ -37793,9 +37792,8 @@ var render = function() {
                   { staticClass: "carousel-indicators" },
                   _vm._l(this.projects, function(project, index) {
                     return _c("li", {
-                      staticClass: "active",
                       attrs: {
-                        "data-target": "#carouselExampleCaptions",
+                        "data-target": "#carousel" + _vm.id,
                         "data-slide-to": index
                       }
                     })

@@ -5,15 +5,14 @@
             Projects
             <i class="fa"></i>
         </a></h4>
-        <div class="collapse" :class=" {show: this.id===1}" :id="`projectsBlock${this.id}`">
+        <div class="collapse" :class=" {show: this.id === 1}" :id="`projectsBlock${this.id}`">
             <div class="card card-body" >
                 <div class="bd-example">
                     <div data-interval="false" :id="`carousel${this.id}`" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li
-                                data-target="#carouselExampleCaptions"
-                                class="active"
                                 v-for="(project, index) in this.projects"
+                                :data-target="`#carousel${id}`"
                                 :data-slide-to=index
                             >
                             </li>
@@ -21,7 +20,7 @@
                         <div class="carousel-inner">
                             <div class="carousel-item"
                                  v-for="(project, index) in this.projects"
-                                 :class="{ active: index===0 }"
+                                 :class="{ active: index === 0 }"
                             >
                                 <div class="carousel-caption d-md-block mx-auto w-75">
                                     <div>
