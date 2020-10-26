@@ -24,6 +24,7 @@
                 position: absolute;
                 right: .5em;
                 top: .5em;
+                z-index: 10;
             }
 
             @media (min-width: 768px) {
