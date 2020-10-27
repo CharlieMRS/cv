@@ -13,7 +13,7 @@
             .cv {
                 padding: 1.4em;
                 background: #fff;
-                transition: 1.5s cubic-bezier(0.65, 0.24, 0.35, 0.99);
+                transition: all 1.5s cubic-bezier(0.65, 0.24, 0.35, 0.99), width 2s;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -32,10 +32,9 @@
                 float: none;
             }
 
-            /*.cv.twoD {
-                this is jumping it left on transition
-                max-width: 100%;
-            }*/
+            .row.cv.twoD {
+                width: 100%;
+            }
             /*.cv.twoD  > div {
               enjoys minimal browser support
               max-width: 100vw;
