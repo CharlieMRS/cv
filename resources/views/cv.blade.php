@@ -7,9 +7,9 @@
         <meta name="description" content="Web Resume of Web Developer Charlie Meers">
         <link rel="stylesheet" type="text/css" href="css/app.css">
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
+
             .cv {
                 padding: 1.4em;
                 background: #fff;
@@ -17,50 +17,84 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                width: 612px;
                 max-height: 100%;
                 overflow: scroll;
             }
             .cv button.close {
-                position: absolute;
+                /*position: absolute;
                 right: .5em;
-                top: .5em;
+                top: .5em;*/
+                z-index: 10;
+                padding-left: 15px;
+                position: relative;
+                top: -0.4em;
             }
 
-            @media (min-width: 768px) {
+            /*.cv.twoD {
+                this is jumping it left on transition
+                max-width: 100%;
+            }*/
+            /*.cv.twoD  > div {
+              enjoys minimal browser support
+              max-width: 100vw;
+            }*/
 
+            /*:not stuff a stopgap til can bind class w/ Vue but for graceful load start w/ static class*/
+            .cv.threeD:not(.twoD) {
+                transform: scaleX(0.2) scaleY(0.23) rotateX(66.8deg) rotateY(19deg) rotateZ(-67deg) skew(-3deg, 5deg);
+                box-shadow: 3px 7px 9px;
+                position: absolute;
+                /*update in MQ below if positioning changes*/
+                top: 170px;
+                left: 50px;
+                width: 800px;
+                max-height: 710px;
+            }
+            .cv.threeD:not(.twoD):hover{
+                cursor: pointer;
+            }
+
+            /*@media (min-width: 576px) {
                 .cv{
+                    !*update placard width too, & media query*!
                     width: 612px;
                 }
-                /*:not stuff a stopgap til can bind class w/ Vue but for graceful load start w/ static class*/
+
+            }*/
+            @media (max-width: 576px) {
+                body {
+                    background-position: -260px -60px;
+                }
                 .cv.threeD:not(.twoD) {
-                    transform: scaleX(0.2) scaleY(0.23) rotateX(66.8deg) rotateY(19deg) rotateZ(-67deg) skew(-3deg, 5deg);
-                    box-shadow: 3px 7px 9px;
-                    position: absolute;
-                    top: 170px;
-                    left: 50px;
-                    width: 800px;
-                    max-height: 710px;
+                    left: -200px;
+                    top: 110px;
                 }
-                .cv.threeD:not(.twoD):hover{
-                    cursor: pointer;
+                /*.cv.twoD {
+                    max-width: 100%;
                 }
+*/
             }
+
         </style>
 
     </head>
     <body>
         <div id ="app" class="container">
-            <div class="row placard">
-                <div class="col-md-4">
+            <div class="row placard" aria-hidden="true">
+                <div class="col-sm-4">
                     <h1>CHARLIE MEERS</h1>
                     <h2 class="subtitle">WEB DEVELOPER</h2>
-                    <button
-                        type="button"
-                        class="btn btn-light"
-                        v-on:click="applyDimension(2)"
-                    >Resume</button>
-                    <a href="{{url('/docs/CV_CharlieMeers082020.pdf')}}" rel="Charlie Meers Web Developer Resume PDF">PDF Version</a>
-                </div>
+                    <div class="mt-4">
+                        <button
+                            type="button"
+                            class="btn btn-light"
+                            v-on:click="applyDimension(2)"
+                        >Resume
+                        </button>
+                        <a href="{{url('/docs/CV_CharlieMeers082020.pdf')}}"
+                           rel="Charlie Meers Web Developer Resume PDF">PDF Version</a></div>
+                    </div>
             </div>
             <div class="row cv threeD"
                 v-on:click="applyDimension(2)"
@@ -73,7 +107,7 @@
                 >
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <h1>CHARLIE MEERS <span>WEB DEVELOPER</span></h1>
                     <ul class="icons">
                         <li><i class="fa fa-map-marker"></i> San Diego, CA</li>
@@ -103,15 +137,16 @@
                     </ul>
                     <h2>EDUCATION</h2>
                     <p>
-                        The Evergreen State College Olympia, WA
+                        Evergreen State College
+                        Olympia, WA
                         Bachelor of Arts
                         Graduated May 2011
                     </p>
                 </div>
-                <div class="col-md-8 jobs">
+                <div class="col-sm-8 jobs">
                     <h2>EXPERIENCE</h2>
                     <h3>WEB DEVELOPER @ LIFESTYLE PUBLICATIONS</h3>
-                    <p class="jobMeta">Kansas City, MO     04/2019 – Current</p>
+                    <p class="jobMeta">Kansas City, MO     04/2019 – 10/2020</p>
                     <ul class="atts">
                         <li>Implement fullstack features for internal MVC SPA Symfony/Doctrine/Handlebars web app</li>
                         <li>Build queries for MySQL, GraphQL, and dynamoDB</li>

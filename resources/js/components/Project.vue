@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div class="p-3 border projects">
         <h4><a class="toggle" data-toggle="collapse" :href="`#projectsBlock${this.id}`"
                role="button" aria-expanded="false" :aria-controls="projectsBlock">
             Projects
@@ -15,6 +15,7 @@
                                 :data-target="`#carousel${id}`"
                                 :data-slide-to=index
                             >
+                            {{index + 1}}
                             </li>
                         </ol>
                         <div class="carousel-inner">
@@ -22,7 +23,7 @@
                                  v-for="(project, index) in this.projects"
                                  :class="{ active: index === 0 }"
                             >
-                                <div class="carousel-caption d-md-block mx-auto w-75">
+                                <div class="carousel-caption d-md-block mx-auto pt-2">
                                     <div>
                                         <h5>{{project.title}}</h5>
                                         <div class="techStack">

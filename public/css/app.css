@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10882,7 +10882,12 @@ a.text-dark:focus {
   }
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.7rem;
   background-image: url(/images/desk.jpg);
   background-repeat: no-repeat;
@@ -10891,7 +10896,6 @@ body {
 h1 {
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -2px;
   line-height: 0.9;
   font-size: 3em;
   margin-bottom: 0.1em;
@@ -10934,6 +10938,10 @@ a.repo {
   left: 20px;
   font-size: 3em;
   z-index: -1;
+}
+
+blockquote {
+  font-size: 0.8rem;
 }
 
 button + a {
@@ -11021,7 +11029,12 @@ p.jobMeta {
   top: 0;
   left: 0;
   padding: 1.4em;
-  width: 800px;
+}
+
+@media (min-width: 576px) {
+  .placard {
+    width: 800px;
+  }
 }
 
 /*.cv {
@@ -11130,16 +11143,24 @@ span.carousel-control-next-icon {
   padding: 0;
 }
 
+.carousel-indicators {
+  text-indent: 0;
+}
+
 .carousel-indicators li {
   background: #cccccc;
+  text-indent: 0;
+  border: none;
+  height: initial;
 }
 
 .projects {
   margin: 0 0 3em;
+  padding-bottom: 0 !important;
 }
 
 .carousel {
-  padding: 0 0 4em;
+  padding: 0 0 5em;
 }
 
 .carousel-inner {
@@ -11147,14 +11168,9 @@ span.carousel-control-next-icon {
   overflow-y: scroll;
 }
 
-.carousel-indicators li {
-  border-top-width: 0px;
-  height: 0;
-}
-
 .techStack {
   margin-bottom: 0.7em;
-  font-size: 0.5em;
+  font-size: 0.6rem;
 }
 
 .techStack ul {
@@ -11173,9 +11189,9 @@ span.carousel-control-next-icon {
   margin-right: 0.3em;
 }
 
-@media (max-width: 768px) {
-  button.close {
-    display: none;
-  }
-}
+/*@media (max-width: 768px) {
+    button.close {
+        display: none;
+    }
+}*/
 

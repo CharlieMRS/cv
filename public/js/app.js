@@ -2018,6 +2018,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['id', 'projects'],
   computed: {
@@ -37748,7 +37749,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "projects" }, [
+  return _c("div", { staticClass: "p-3 border projects" }, [
     _c("h4", [
       _c(
         "a",
@@ -37791,12 +37792,22 @@ var render = function() {
                   "ol",
                   { staticClass: "carousel-indicators" },
                   _vm._l(this.projects, function(project, index) {
-                    return _c("li", {
-                      attrs: {
-                        "data-target": "#carousel" + _vm.id,
-                        "data-slide-to": index
-                      }
-                    })
+                    return _c(
+                      "li",
+                      {
+                        attrs: {
+                          "data-target": "#carousel" + _vm.id,
+                          "data-slide-to": index
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(index + 1) +
+                            "\n                        "
+                        )
+                      ]
+                    )
                   }),
                   0
                 ),
@@ -37816,7 +37827,7 @@ var render = function() {
                           "div",
                           {
                             staticClass:
-                              "carousel-caption d-md-block mx-auto w-75"
+                              "carousel-caption d-md-block mx-auto pt-2"
                           },
                           [
                             _c("div", [
