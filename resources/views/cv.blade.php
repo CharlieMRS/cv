@@ -26,9 +26,10 @@
                 right: .5em;
                 top: .5em;*/
                 z-index: 10;
-                padding-left: 15px;
                 position: relative;
+                padding-left: 15px;
                 top: -0.4em;
+                float: none;
             }
 
             /*.cv.twoD {
@@ -116,7 +117,7 @@
                         <li><i class="fa fa-mobile"></i> 816-813-0859</li>
 
                     </ul>
-                    <blockquote>
+                    <blockquote class="pt-4">
                         Fullstack developer with expertise in fast, user-centric web apps, clean maintainable code,
                         intuitive user interfaces & automating business goals online
                     </blockquote>
