@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 // Variables
 @import 'variables';
@@ -7,7 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+html {
+    font-size: 18px;
+}
+
 body {
+    font-family: "Ubuntu", sans-serif;
     font-size: 0.7rem;
     background-image: url(/images/desk.jpg);
     background-repeat: no-repeat;
@@ -15,7 +20,6 @@ body {
 h1 {
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: -2px;
     line-height: 0.9;
     font-size: 3em;
     margin-bottom: 0.1em;
@@ -56,6 +60,11 @@ a {
          z-index: -1;
     }
 }
+
+blockquote {
+    font-size: 0.8rem;
+}
+
 button + a {
     margin-left: 1em;
 }
@@ -131,7 +140,9 @@ p.jobMeta {
     top: 0;
     left: 0;
     padding: 1.4em;
-    width: 800px;
+    @media (min-width: 576px) {
+        width: 800px;
+    }
 }
 
 //migrated to head for graceful loading
@@ -238,30 +249,33 @@ span.carousel-control-next-icon {
     padding: 0;
 }
 
-
-.carousel-indicators li {
-    background: hsl(0deg 0% 80%);
+.carousel-indicators {
+    text-indent: 0;
+    li {
+        background: #cccccc;
+        text-indent: 0;
+        border: none;
+        height: initial;
+    }
 }
 
 .projects {
     margin: 0 0 3em;
+    padding-bottom: 0!important;
 }
 
 .carousel {
-    padding: 0 0 4em;
+    padding: 0 0 5em;
 }
 
 .carousel-inner {
     height: 14em;
     overflow-y: scroll;
 }
-.carousel-indicators li {
-    border-top-width: 0px;
-    height: 0;
-}
+
 .techStack {
     margin-bottom: 0.7em;
-    font-size: 0.5em;
+    font-size: 0.6rem;
     ul {
         display: inline;
         margin-bottom: 0.5em;
@@ -279,9 +293,9 @@ span.carousel-control-next-icon {
 }
 
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     button.close {
         display: none;
     }
-}
+}*/
 
