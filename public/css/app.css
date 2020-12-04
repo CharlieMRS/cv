@@ -11076,6 +11076,14 @@ p.jobMeta {
   margin: 0;
 }
 
+a {
+  text-decoration: underline;
+}
+
+a.toggle {
+  text-decoration: none;
+}
+
 h4 {
   text-transform: uppercase;
   font-size: 1em;

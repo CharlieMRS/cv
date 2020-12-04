@@ -110,12 +110,32 @@
                         <li><i class="fa fa-paper-plane"></i> <a href="mailto:charliemeers@gmail.com">Email</a></li>
                         <li><i class="fa fa-link"></i> charliemeers.com</li>
                         <li><i class="fa fa-mobile"></i> 816-813-0859</li>
-
                     </ul>
                     <blockquote class="pt-4">
                         Fullstack developer with expertise in fast, user-centric web apps, clean maintainable code,
                         intuitive user interfaces & automating business goals online
                     </blockquote>
+                    <div class="p-2 border projects">
+                        <h4>
+                            <a class="toggle" data-toggle="collapse" href="#demoProjects"
+                               role="button" aria-expanded="false" :aria-controls="demoProjects">
+                                Fullstack Demos
+                                <i class="fa"></i>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="demoProjects">
+                            <ul>
+                                <li>
+                                    <a href="http://books.charliemeers.com">My Bookshelf</a>
+                                    <small><a target="_blank" href="https://github.com/CharlieMRS/MyBookshelf">Repo</a></small>
+                                </li>
+                                <li>
+                                    <a href="http://link-shortnr.charliemeers.com">Link Shortnr</a>
+                                    <small><a target="_blank" href="https://github.com/CharlieMRS/link-shortnr">Repo</a></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <h2>ATTRIBUTES</h2>
                     <ul class="atts callout">
                         <li>5 years fullstack web development experience</li>
