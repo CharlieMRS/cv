@@ -11,9 +11,9 @@
         <style>
 
             .cv {
-                padding: 1.4em;
+                padding: 3em 1.4em 1.4em;
                 background: #fff;
-                transition: all 1.5s cubic-bezier(0.65, 0.24, 0.35, 0.99), width 2s;
+                transition: all 1.5s cubic-bezier(0.65, 0.24, 0.35, 0.99);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -21,20 +21,17 @@
                 max-height: 100%;
                 overflow: scroll;
             }
-            .cv button.close {
-                /*position: absolute;
-                right: .5em;
-                top: .5em;*/
+            button.close {
                 z-index: 10;
-                position: relative;
+                position: absolute;
                 padding-left: 15px;
-                top: -0.4em;
+                top: 7px;
                 float: none;
             }
 
-            .row.cv.twoD {
+            /*.row.cv.twoD {
                 width: 100%;
-            }
+            }*/
             /*.cv.twoD  > div {
               enjoys minimal browser support
               max-width: 100vw;
@@ -62,7 +59,7 @@
                 }
 
             }*/
-            @media (max-width: 576px) {
+            @media (max-width: 612px) {
                 body {
                     background-position: -260px -60px;
                 }
@@ -70,10 +67,9 @@
                     left: -200px;
                     top: 110px;
                 }
-                /*.cv.twoD {
-                    max-width: 100%;
+                .cv.twoD {
+                    width: 100%;
                 }
-*/
             }
 
         </style>
@@ -111,7 +107,7 @@
                     <h1>CHARLIE MEERS <span>WEB DEVELOPER</span></h1>
                     <ul class="icons">
                         <li><i class="fa fa-map-marker"></i> San Diego, CA</li>
-                        <li><i class="fa fa-paper-plane"></i> charliemeers@gmail.com</li>
+                        <li><i class="fa fa-paper-plane"></i> <a href="mailto:charliemeers@gmail.com">Email</a></li>
                         <li><i class="fa fa-link"></i> charliemeers.com</li>
                         <li><i class="fa fa-mobile"></i> 816-813-0859</li>
 
