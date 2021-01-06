@@ -17,9 +17,11 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 612px;
                 max-height: 100%;
                 overflow: scroll;
+            }
+            .fixedRow {
+                width: 800px;
             }
             button.close {
                 z-index: 10;
@@ -29,14 +31,6 @@
                 float: none;
             }
 
-            /*.row.cv.twoD {
-                width: 100%;
-            }*/
-            /*.cv.twoD  > div {
-              enjoys minimal browser support
-              max-width: 100vw;
-            }*/
-
             /*:not stuff a stopgap til can bind class w/ Vue but for graceful load start w/ static class*/
             .cv.threeD:not(.twoD) {
                 transform: scaleX(0.2) scaleY(0.23) rotateX(66.8deg) rotateY(19deg) rotateZ(-67deg) skew(-3deg, 5deg);
@@ -45,21 +39,13 @@
                 /*update in MQ below if positioning changes*/
                 top: 170px;
                 left: 50px;
-                width: 800px;
                 max-height: 710px;
             }
             .cv.threeD:not(.twoD):hover{
                 cursor: pointer;
             }
 
-            /*@media (min-width: 576px) {
-                .cv{
-                    !*update placard width too, & media query*!
-                    width: 612px;
-                }
-
-            }*/
-            @media (max-width: 612px) {
+            @media (max-width: 800px) {
                 body {
                     background-position: -260px -60px;
                 }
@@ -77,7 +63,7 @@
     </head>
     <body>
         <div id ="app" class="container">
-            <div class="row placard" aria-hidden="true">
+            <div class="row placard fixedRow" aria-hidden="true">
                 <div class="col-sm-4">
                     <h1>CHARLIE MEERS</h1>
                     <h2 class="subtitle">WEB DEVELOPER</h2>
@@ -92,7 +78,7 @@
                            rel="Charlie Meers Web Developer Resume PDF">PDF Version</a></div>
                     </div>
             </div>
-            <div class="row cv threeD"
+            <div class="row cv threeD fixedRow"
                 v-on:click="applyDimension(2)"
                 :class="{ threeD: isThreeD, twoD: isTwoD }"
             >
@@ -109,7 +95,7 @@
                         <li><i class="fa fa-map-marker"></i> San Diego, CA</li>
                         <li><i class="fa fa-paper-plane"></i> <a href="mailto:charliemeers@gmail.com">Email</a></li>
                         <li><i class="fa fa-link"></i> charliemeers.com</li>
-                        <li><i class="fa fa-mobile"></i> 816-813-0859</li>
+                        <li><i class="fa fa-mobile"></i> 858-298-7059</li>
                     </ul>
                     <blockquote class="pt-4">
                         Fullstack developer with expertise in fast, user-centric web apps, clean maintainable code,
@@ -153,9 +139,9 @@
                     </ul>
                     <h2>EDUCATION</h2>
                     <p>
-                        Evergreen State College
-                        Olympia, WA
-                        Bachelor of Arts
+                        Evergreen State College<br>
+                        Olympia, WA<br>
+                        Bachelor of Arts<br>
                         Graduated May 2011
                     </p>
                 </div>

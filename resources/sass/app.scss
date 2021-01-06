@@ -52,12 +52,8 @@ h6 {
 
 a {
     color: inherit;
-    &.repo {
-        position: absolute;
-        bottom: 10px;
-        top: 760px;
-        font-size: 3em;
-         z-index: -1;
+    &.repo i{
+        font-size: 1.5em;
     }
 }
 
@@ -140,44 +136,7 @@ p.jobMeta {
     top: 0;
     left: 0;
     padding: 1.4em;
-    @media (min-width: 576px) {
-        width: 800px;
-    }
 }
-
-//migrated to head for graceful loading
-/*.cv {
-    padding: 1.4em;
-    background: #fff;
-    transition: 1.5s cubic-bezier(0.65, 0.24, 0.35, 0.99);
-    position: absolute;
-    width: 612px;
-    top: 0;
-    left: 0;
-    max-height: 100%;
-    overflow: scroll;
-    button.close {
-        position: absolute;
-        right: .5em;
-        top: .5em;
-    }
-
-    &.threeD {
-        &:hover{
-            cursor: pointer;
-        }
-        @media (min-width: 800px) {
-            transform: scaleX(0.2) scaleY(0.23) rotateX(66.8deg) rotateY(19deg) rotateZ(-67deg) skew(-3deg, 5deg);
-            box-shadow: 3px 7px 9px;
-            position: absolute;
-            top: 170px;
-            left: 50px;
-            width: 800px;
-        }
-    }
-    &.twoD {
-    }
-}*/
 .jobs h3 {
     font-size: 1.5em;
     font-weight: 100;
@@ -296,11 +255,4 @@ span.carousel-control-next-icon {
         }
     }
 }
-
-
-/*@media (max-width: 768px) {
-    button.close {
-        display: none;
-    }
-}*/
 
