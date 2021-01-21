@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Charlie Meers Web Resume</title>
         <meta name="description" content="Web Resume of Web Developer Charlie Meers">
+        <link rel="icon" href="/charlie-avatar.png">
         <link rel="stylesheet" type="text/css" href="css/app.css">
         <!-- Fonts -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
