@@ -67,7 +67,7 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', <?= env('GA_ID') ?>);
+            gtag('config', '<?= env('GA_ID') ?>');
         </script>
     </head>
     <body>
